@@ -62,7 +62,7 @@ fig = px.choropleth(
 #теплова карта
 
 def make_heatmap(input_df, input_y, input_x, input_color, input_color_them
-heatmap = alt. Chart (input_df) mark_rect(). encode (
+heatmap =alt.Chart(input_df).mark_rect(). encode (
 y=alt. Y(f'(input_y):0', axis=alt.Axis (title="year", titleFonts
 x=alt.X(f'(input_x}:0', axis=alt.Axis(title="", titleFontSize=
 color=alt. Color (f'maxfinput_color]) :0',
