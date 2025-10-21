@@ -15,7 +15,8 @@ st.set_page_config(
 alt.themes.enable("dark")
 
 # --- Завантаження даних ---
-df_reshaped = pd.read_csv('data/us-population-2010-2019-reshaped.csv')
+df_reshaped = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_usa_states.csv')
+df_reshaped.rename(columns={'Rank': 'year', 'State': 'state', 'Population': 'population'}, inplace=True)
 
 # --- Бокова панель ---
 with st.sidebar:
