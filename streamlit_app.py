@@ -62,7 +62,7 @@ fig = px.choropleth(
 #теплова карта
 
 def make_heatmap(input_df, input_y, input_x, input_color, input_color_them
-heatmap = alt. Chart (input_df) mark_rect) • encode (
+heatmap = alt. Chart (input_df) mark_rect). encode (
 y=alt. Y(f'(input_y):0', axis=alt.Axis (title="year", titleFonts
 x=alt.X(f'(input_x}:0', axis=alt.Axis(title="", titleFontSize=
 color=alt. Color (f'maxfinput_color]) :0',
@@ -70,7 +70,7 @@ Legend=None,
 scale=alt.Scale(scheme=input_color_theme)) ,
 stroke=alt.value('black'),
 strokewidth=alt.value(0.25),
-) •properties (width=900
+) .properties (width=900
 ). configure_axis (
 LabelFontSize=12,
 titleFontSize=12
@@ -84,7 +84,7 @@ st.metric(label=f"Total US population in {selected_year}", value=f"{total_popula
 
 #хороплетна карта
 def make_heatmap(input_df, input_y, input_x, input_color, input_color_them
-heatmap = alt. Chart (input_df) mark_rect) • encode (
+heatmap = alt. Chart (input_df) mark_rect) . encode (
 y=alt. Y(f'(input_y):0', axis=alt.Axis (title="year", titleFonts
 x=alt.X(f'(input_x}:0', axis=alt.Axis(title="", titleFontSize=
 color=alt. Color (f'maxfinput_color]) :0',
@@ -92,7 +92,7 @@ Legend=None,
 scale=alt.Scale(scheme=input_color_theme)) ,
 stroke=alt.value('black'),
 strokewidth=alt.value(0.25),
-) •properties (width=900
+) .properties (width=900
 ). configure_axis (
 LabelFontSize=12,
 titleFontSize=12
